@@ -68,7 +68,7 @@ ORDER BY SUM(Sales) DESC LIMIT 10;
 ```
 ##### 5. What shipping modes sold the most products?
 
-```
+```sql
 SELECT 
 	`Ship Mode`,
     FORMAT(SUM(Sales),2) AS TOTAL_SALES
