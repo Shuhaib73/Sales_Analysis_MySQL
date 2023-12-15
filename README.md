@@ -73,7 +73,7 @@ SELECT
 	`Ship Mode`,
     FORMAT(SUM(Sales),2) AS TOTAL_SALES
 FROM orders
--- WHERE YEAR(`Order Date`) = 2014
+WHERE YEAR(`Order Date`) = 2014
 GROUP BY `Ship Mode`
 ORDER BY SUM(Sales) DESC;
 ```
